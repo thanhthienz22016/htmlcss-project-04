@@ -45,6 +45,13 @@ a {
     line-height: 1.19;
 }
 
+.heading-common-2 {
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
 .desc-common {
     margin-top: 24px;
     color: #656689;
@@ -549,7 +556,113 @@ a {
 }
 
 .services__grid {
+    margin-top: 71px;
     display: grid;
-    grid-template: auto / 64px 447px 64px;
+    grid-template: auto / 1fr 447px 1fr;
     column-gap: 64px;
+}
+
+.services__box {
+    padding: 30px 28px 22px 28px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 188, 122, 0.26);
+    background: #FFF;
+}
+
+.services__box+.services__box {
+    margin-top: 24px;
+}
+
+.services__heading-2 {
+    position: relative;
+    padding-left: 12px;
+}
+
+.services__heading-2::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 22px;
+    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+}
+
+.services__desc {
+    margin-top: 18px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.services__cta {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+    margin-top: 24px;
+    color: #34396A;
+    font-family: Sora, sans-serif;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.services__cta:hover {
+    color: var(--primary-color-2);
+}
+
+.services__icon {
+    color: var(--primary-color-2);
+    rotate: -45deg;
+    transition: rotate 0.3s ease;
+}
+
+.services__cta:hover .services__icon {
+    rotate: 0deg;
+}
+
+.services__img {
+    width: 447px;
+    height: 643px;
+    object-fit: cover;
+    filter: drop-shadow(2px 4px 7px #ccc);
+}
+
+.services__btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px auto 0 auto;
+    width: 214px;
+    min-width: 214px;
+    font-weight: 500;
+    color: var(--primary-color-2);
+    border: 1px solid var(--primary-color-2);
+    z-index: 2;
+    overflow: hidden;
+    transition: color 0.7s ease-in-out;
+}
+
+.services__btn:hover {
+    color: #fff;
+}
+
+.services__btn::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 100%;
+    background: var(--primary-color-2);
+    z-index: -1;
+    transition: width 0.6s ease-in-out, left 0.6s ease-in-out, right 0.6s ease-in-out;
+    border-color: var(--primary-color-2);
+    /* border-radius: 31px; */
+}
+
+.services__btn:hover::after {
+    width: 100%;
+    left: 0;
 }
