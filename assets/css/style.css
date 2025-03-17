@@ -619,11 +619,31 @@ a {
     rotate: 0deg;
 }
 
+.service__image {
+    position: relative;
+}
+
+.service__image::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 410px;
+    height: 250px;
+    background: #90E6F1;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    z-index: 1;
+}
+
 .services__img {
+    position: relative;
     width: 447px;
     height: 643px;
     object-fit: cover;
     filter: drop-shadow(2px 4px 7px #ccc);
+    z-index: 2;
 }
 
 .services__btn {
