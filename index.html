@@ -4,22 +4,369 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Lucy</title>
+
     <!-- Reset CSS -->
     <link rel="stylesheet" href="./assets/css/reset.css">
     <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- Link fonts -->
-    <link rel="preload" href="./assets/fonts/Sora/Sora-Medium.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/Poppins/Poppins-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Sora/Sora-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <!-- Font CSS fonts-->
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
+
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- Favicon -->
-
+    <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="./assets/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
-    <h1>Hello World</h1>
+    <header class="header header-fixed">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="/">
+                        <img class="logo__img" src="./assets/img/logo.svg" alt="Logo Lucy">
+                    </a>
+                </div>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li>
+                            <a class="header__item active" href="#!">Home</a>
+                        </li>
+                        <li>
+                            <a class="header__item" href="#!">About</a>
+                        </li>
+                        <li>
+                            <a class="header__item" href="#!">Service & Rates</a>
+                        </li>
+                        <li>
+                            <a class="header__item" href="#!">Reviewa</a>
+                        </li>
+                        <li>
+                            <a class="header__item" href="#!">Contacts us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__cta">
+                    <a class="header__btn" href="#!"> Sign up</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main style="height: 6000px;">
+        <!-- Hero section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <!-- Hero image -->
+                    <figure class="hero__image">
+                        <img class="hero__img hero__img-decor" src="./assets/img/hero-01.jpg" alt="Established &
+                        Trusted Pet
+                        Care Service">
+                        <img class="hero__img" src="./assets/img/hero-02.jpg" alt="Established &
+                        Trusted Pet
+                        Care Service">
+                        <img class="hero__img" src="./assets/img/hero-03.png" alt="Established &
+                        Trusted Pet
+                        Care Service">
+                    </figure>
+
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">Established &
+                            Trusted Pet
+                            Care Service</h1>
+                        <p class="hero__desc desc-common">Discover a wide variety of Pawsitive services to choose
+                            from,
+                            including
+                            daycare, private walks, office duty and spa.</p>
+                        <div class="hero__group-btn">
+                            <a href="#!" class="hero__cta btn">
+                                <span>Book a Meet</span>
+                                <img class="hero__icon-btn" src="./assets/icons/icon-arrow.svg" alt="icon">
+                            </a>
+                            <a href="#!" class="hero__cta-last">Schedule a Call</a>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Agency Pet -->
+        <section class="about">
+            <div class="container">
+                <div class="about__wrapper">
+                    <!-- about content -->
+                    <section class="about__content">
+                        <span class="about__text-mini">
+                            // About //
+                        </span>
+                        <h2 class="about__heading heading-common">
+                            Best Agency For
+                            Your Pet.
+                        </h2>
+                        <p class="about__desc desc-common">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+
+                        <ul class="about__list">
+                            <li class="about__item">
+                                <i class="about__icon fa-solid fa-check"></i>
+                                <span>Certified Groomer</span>
+                            </li>
+                            <li class="about__item">
+                                <i class="about__icon fa-solid fa-check"></i>
+                                <span> Animal Lover</span>
+                            </li>
+                            <li class="about__item">
+                                <i class="about__icon fa-solid fa-check"></i>
+                                <span>14+ Years Experience</span>
+                            </li>
+                            <li class="about__item">
+                                <i class="about__icon fa-solid fa-check"></i>
+                                <span>Pet Parent Of 3 Dogs</span>
+                            </li>
+                        </ul>
+                    </section>
+                    <!-- about image -->
+                    <div class="about__image">
+                        <figure class="image-wrapper">
+                            <img src="./assets/img/about-pet-agency.png" alt="" class="about__img">
+                        </figure>
+                        <div class="year-experience">
+                            <h4 class="year-experience__heading">
+                                20+
+                            </h4>
+                            <p class="year-experience__desc">
+                                Years Experience
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Vacation -->
+        <section class="vacation">
+            <div class="container">
+                <div class="vacation__wapper">
+                    <!-- Vacation image -->
+                    <figure class="vacation__image">
+                        <img src="./assets/img/vacation-img.png" alt="Taking A Vacation?
+                        So Is Your Pet." class="vacation__img">
+                    </figure>
+
+                    <!-- Vacation content -->
+                    <section class="vacation__content">
+                        <h2 class="heading-common">Taking A Vacation?
+                            So Is Your Pet.</h2>
+                        <p class="vacation__desc desc-common">We offer long-term and short-term boarding. Every dog has
+                            its own
+                            private, spacious room and daily individual time in our large play yard.</p>
+                        <!-- Tabs click -->
+                        <div class="vacation__tabs">
+                            <input type="radio" id="checked-01" name="tab-control" checked>
+
+                            <input type="radio" id="checked-02" name="tab-control">
+
+                            <input type="radio" id="checked-03" name="tab-control">
+                            <ul class="vacation__list">
+                                <li class="vacation__item">
+                                    <label class="vacation__label" for="checked-01">
+                                        <img src="./assets/icons/tab-icon-01.svg" alt="icon Pet Boarding">
+                                        Pet Boarding
+                                    </label>
+                                </li>
+                                <li class="vacation__item">
+                                    <label class="vacation__label" for="checked-02">
+                                        <img src="./assets/icons/tab-icon-02.svg" alt="icon Pet Daycare">
+                                        Pet Daycare
+                                    </label>
+                                </li>
+                                <li class="vacation__item">
+                                    <label class="vacation__label" for="checked-03">
+                                        <img src="./assets/icons/tab-icon-03.svg" alt="icon Pet Transport">
+                                        Pet Transport
+                                    </label>
+                                </li>
+                            </ul>
+                            <div class="vacation__content-tabs">
+                                <!-- Vacation content tab #1 -->
+                                <div class="vacation__content-tabs-inner">
+                                    <p class="vacation__desc-tabs desc-common">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repellat
+                                        sapiente inventore repellendus.
+                                    </p>
+                                    <a href="#!" class="vacation__cta">
+                                        View more
+                                    </a>
+                                </div>
+                                <!-- Vacation content tab #2 -->
+                                <div class="vacation__content-tabs-inner">
+                                    <p class="vacation__desc-tabs desc-common">
+                                        While you're on holiday, here's where your furry friends will spend their time.
+                                    </p>
+                                    <a href="#!" class="vacation__cta">
+                                        View more
+                                    </a>
+                                </div>
+                                <!-- Vacation content tab #3 -->
+                                <div class="vacation__content-tabs-inner">
+                                    <p class="vacation__desc-tabs desc-common">
+                                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia iure saepe
+                                        recusandae accusamus!
+                                    </p>
+                                    <a href="#!" class="vacation__cta">
+                                        View more
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="services__wapper">
+                    <div class="services__header">
+                        <span class="services__span">
+                            What we do for you?
+                        </span>
+                        <h2 class="services__heading heading-common">
+                            Our Services
+                        </h2>
+                    </div>
+                    <div class="services__grid">
+                        <!-- Content wapper box -->
+                        <div class="services__grid-wapper">
+                            <section class="services__box">
+                                <h3 class="services__heading">
+                                    Puppy Sitting
+                                </h3>
+                                <p class="services__desc desc-common">
+                                    Helping your new pup to be a good boy or girl isn’t always easy, but we’re here to
+                                    help.
+                                </p>
+
+                                <div class="services__cta">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right services__icon"></i>
+                                </div>
+                            </section>
+                            <section class="services__box">
+                                <h3 class="services__heading">
+                                    Dog Walking
+                                </h3>
+                                <p class="services__desc desc-common">
+                                    Choose from a 30, 45, or 60-minute visit to give your pet their daily dose of
+                                    fun-filled.
+                                </p>
+
+                                <div class="services__cta">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right services__icon"></i>
+                                </div>
+                            </section>
+                            <section class="services__box">
+                                <h3 class="services__heading">
+                                    Pet Sitting
+                                </h3>
+                                <p class="services__desc desc-common">
+                                    While you’re away we can make sure your pet has all the food, water, exercise, and,
+                                    of
+                                    course. </p>
+
+                                <div class="services__cta">
+                                    Pet Sitting
+                                    <i class="fa-solid fa-arrow-right services__icon"></i>
+                                </div>
+                            </section>
+                        </div>
+                        <!-- Cotent image -->
+                        <div class="service__grid-image">
+                            <figure class="service__image">
+                                <img src="./assets/img/service-img.png" alt="Our Services">
+                            </figure>
+                            <a href="#!" class="service__btn btn"></a>
+                        </div>
+                        <!-- Content wapper box -->
+                        <div class="services__grid-wapper">
+                            <section class="services__box">
+                                <h3 class="services__heading">
+                                    Puppy Sitting
+                                </h3>
+                                <p class="services__desc desc-common">
+                                    Helping your new pup to be a good boy or girl isn’t always easy, but we’re here to
+                                    help.
+                                </p>
+
+                                <div class="services__cta">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right services__icon"></i>
+                                </div>
+                            </section>
+                            <section class="services__box">
+                                <h3 class="services__heading">
+                                    Dog Walking
+                                </h3>
+                                <p class="services__desc desc-common">
+                                    Choose from a 30, 45, or 60-minute visit to give your pet their daily dose of
+                                    fun-filled.
+                                </p>
+
+                                <div class="services__cta">
+                                    Read More
+                                    <i class="fa-solid fa-arrow-right services__icon"></i>
+                                </div>
+                            </section>
+                            <section class="services__box">
+                                <h3 class="services__heading">
+                                    Pet Sitting
+                                </h3>
+                                <p class="services__desc desc-common">
+                                    While you’re away we can make sure your pet has all the food, water, exercise, and,
+                                    of
+                                    course. </p>
+
+                                <div class="services__cta">
+                                    Pet Sitting
+                                    <i class="fa-solid fa-arrow-right services__icon"></i>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
+
+<img src="./assets/img/decor-02.svg" alt="">
