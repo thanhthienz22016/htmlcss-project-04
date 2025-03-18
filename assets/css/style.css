@@ -7,6 +7,11 @@
     --primary-color-2: #FF5B2E;
     --primary-bg: #FFFAF5;
     --primary-bg-2: #FFF6ED;
+
+    /* ellip overflow */
+    --line-clamp-lines: 2;
+    --text-truncate-display: -webkit-box;
+    --text-truncate-orient: vertical;
 }
 
 html {
@@ -28,6 +33,14 @@ body {
 
 a {
     text-decoration: none;
+}
+
+.text-truncate {
+    display: var(--text-truncate-display);
+    -webkit-line-clamp: var(--line-clamp-lines);
+    -webkit-box-orient: var(--text-truncate-orient);
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .btn {
@@ -707,6 +720,7 @@ a {
 /* Team */
 .team {
     padding: 130px 0;
+    background: var(--primary-bg);
 }
 
 .team__header {
@@ -744,6 +758,7 @@ a {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 
 .team__item:nth-child(2):after {
     content: "";
@@ -805,6 +820,7 @@ a {
     height: 299px;
     border-radius: 129.5px;
     background: #90CCFF;
+    transition: background 0.6s ease;
 }
 
 .team__item:nth-child(2) .team__img-bg {
@@ -817,6 +833,22 @@ a {
 
 .team__item:nth-child(4) .team__img-bg {
     background: #36C3D9;
+}
+
+.team__item:nth-child(1):hover .team__img-bg {
+    background: #3f8ed1;
+}
+
+.team__item:nth-child(2):hover .team__img-bg {
+    background: #eb6633;
+}
+
+.team__item:nth-child(3):hover .team__img-bg {
+    background: #de9826;
+}
+
+.team__item:nth-child(4):hover .team__img-bg {
+    background: #0b7889;
 }
 
 .team__avatar {
@@ -899,7 +931,7 @@ a {
 /* Price */
 .price {
     padding: 86px 0;
-    background: var(--primary-bg);
+    background: var(--primary-bg-2);
 }
 
 .price__header {
@@ -1078,4 +1110,268 @@ a {
 
 .price__item+.price__item {
     margin-top: 18px;
+}
+
+/* Review */
+.review {
+    padding: 65px 0 53px;
+    background: var(--primary-bg);
+}
+
+.review__wapper {
+    position: relative;
+}
+
+.review__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.review__image {
+    position: relative;
+    width: 274px;
+    height: 427px;
+    border-radius: 137px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.review__bg-avatar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 274px;
+    height: 350px;
+    background: #FFDA54;
+    border-radius: 137px;
+}
+
+.review__img-avatar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 260px;
+    height: 415px;
+    object-fit: cover;
+    filter: drop-shadow(2px -2px 6px currentColor);
+    color: #fff;
+    transform: translateX(7px);
+}
+
+.review__content {
+    width: 553px;
+}
+
+.review__desc {
+    font-size: 1.8rem;
+    color: #000;
+    line-height: 1.55;
+}
+
+.review__reviewer {
+    position: relative;
+    margin-top: 34px;
+    padding-left: 28px;
+    color: #282828;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.review__reviewer::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background: #000;
+    border-radius: 15px;
+}
+
+.review__btn {
+    outline: none;
+    border: 1px solid #FFD1C4;
+    width: 54px;
+    height: 54px;
+    color: var(--primary-color-2);
+    background: var(--primary-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background, border;
+    transition-duration: .3s;
+}
+
+.review__btn:hover {
+    background: var(--primary-color-2);
+    border-color: var(--primary-color-2);
+}
+
+.review__btn:hover i {
+    color: #fff;
+}
+
+.review__btn.next,
+.review__btn.pre {
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.review__btn.pre {
+    left: 0;
+}
+
+.review__btn.active {
+    background: var(--primary-color-2);
+    border-color: var(--primary-color-2);
+}
+
+.review__btn.active i {
+    color: #fff;
+}
+
+.review__btn i {
+    color: currentColor;
+}
+
+.review__btn.next i {
+    rotate: 180deg
+}
+
+.review__dot-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    column-gap: 10px;
+}
+
+.review__dot-item {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: var(--primary-bg);
+    border: 3px solid var(--primary-color-2);
+    cursor: pointer;
+    transition: background, border-color;
+    transition-duration: 0.3s;
+}
+
+.review__dot-item:hover {
+    border-color: var(--primary-color-2);
+    background: var(--primary-color-2);
+}
+
+.review__dot-item.active {
+    border-radius: 10px;
+    width: 35px;
+    background: var(--primary-color-2);
+}
+
+.blog {
+    padding: 65px 0 130px;
+    background: var(--primary-bg);
+}
+
+.blog__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.blog__desc {
+    margin-top: 0;
+    width: 350px;
+}
+
+.blog__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    max-width: 182px;
+    color: var(--primary-color-2);
+    font-size: 1.6rem;
+    font-weight: 500;
+    background: var(--primary-bg);
+    box-shadow: none;
+    border-radius: 31px;
+    border: 1px solid var(--primary-color-2);
+    transition: background, border-color, color;
+    transition-duration: 0.3s;
+}
+
+.blog__btn:hover {
+    color: #fff;
+    background: var(--primary-color-2);
+    border-color: var(--primary-color-2);
+}
+
+.blog__content {
+    display: flex;
+    column-gap: 48px;
+    margin-top: 54px;
+}
+
+.blog__box {
+    width: 33.3%;
+}
+
+.blog__img-container {
+    position: relative;
+    width: 358px;
+    height: 362px;
+    padding: 24px 0 0 36px;
+    background: #5BD6E2;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.blog__date {
+    color: #FFF;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+}
+
+.blog__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 322px;
+    height: 296px;
+    object-fit: cover;
+}
+
+.blog__heading-wapper {
+    margin-top: 28px;
+}
+
+.blog__heading-2 {
+    line-height: 1.54;
+
+}
+
+.blog__desc-2 {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    line-height: 1.71;
+}
+
+.blog__box:nth-child(2) .blog__img-container {
+    background: #90CCFF;
+}
+
+.blog__box:nth-child(3) .blog__img-container {
+    background: #FF997E;
+}
+
+
+/* Footer */
+.footer {
+    background: var(--primary-bg-2);
 }
