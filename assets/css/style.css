@@ -1551,6 +1551,10 @@ button {
     margin-top: 14px;
 }
 
+.footer__list li+li {
+    margin-top: 5px;
+}
+
 .footer__item {
     color: #656689;
     font-size: 1.4rem;
