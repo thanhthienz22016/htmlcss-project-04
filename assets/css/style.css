@@ -1582,7 +1582,7 @@ button {
     display: flex;
     justify-content: flex-end;
     position: absolute;
-    top: 2px;
+    top: 2.3px;
     right: 0;
     bottom: 0;
     width: 0;
