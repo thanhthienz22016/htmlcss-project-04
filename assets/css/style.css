@@ -18,6 +18,11 @@ html {
     font-size: 62.5%;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 body {
     /* font-family: 'Sora', sans-serif; */
     font-family: 'Poppins', sans-serif;
@@ -226,6 +231,10 @@ button {
     z-index: 2;
 }
 
+.hero__img:nth-child(3) {
+    animation: translateY 3s ease infinite;
+}
+
 .hero__img:nth-child(2) {
     position: absolute;
     bottom: 0;
@@ -400,6 +409,21 @@ button {
     border-radius: 10px;
     background: #5BD6E2;
     box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+    animation: translateY 3s ease infinite;
+}
+
+@keyframes translateY {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }
 
 .year-experience__heading {

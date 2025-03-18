@@ -19,6 +19,9 @@
     <!-- Font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
+    <!-- Link library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="./assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assets/favicon/apple-icon-60x60.png">
@@ -52,19 +55,19 @@
                 <nav class="header__nav">
                     <ul class="header__list">
                         <li>
-                            <a class="header__item active" href="#!">Home</a>
+                            <a class="header__item active" href="#hero-section">Home</a>
                         </li>
                         <li>
-                            <a class="header__item" href="#!">About</a>
+                            <a class="header__item" href="#about">About</a>
                         </li>
                         <li>
-                            <a class="header__item" href="#!">Service & Rates</a>
+                            <a class="header__item" href="#severices">Service & Rates</a>
                         </li>
                         <li>
-                            <a class="header__item" href="#!">Reviewa</a>
+                            <a class="header__item" href="#review">Review</a>
                         </li>
                         <li>
-                            <a class="header__item" href="#!">Contacts us</a>
+                            <a class="header__item" href="#contact">Contacts us</a>
                         </li>
                     </ul>
                 </nav>
@@ -77,7 +80,7 @@
     </header>
     <main>
         <!-- Hero section -->
-        <section class=" hero">
+        <section class=" hero" id="hero-section">
             <div class="container">
                 <div class="hero__wrapper">
                     <!-- Hero image -->
@@ -116,7 +119,7 @@
         </section>
 
         <!-- About Agency Pet -->
-        <section class="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="about__wrapper">
                     <!-- about content -->
@@ -177,7 +180,7 @@
                     <!-- Vacation image -->
                     <figure class="vacation__image">
                         <img src="./assets/img/vacation-img.png" alt="Taking A Vacation?
-                        So Is Your Pet." class="vacation__img">
+                        So Is Your Pet." class="vacation__img" data-aos="fade-right">
                     </figure>
 
                     <!-- Vacation content -->
@@ -252,7 +255,7 @@
         </section>
 
         <!-- Services -->
-        <section class="services">
+        <section class="services" id="severices">
             <div class="container">
                 <div class="services__wapper">
                     <div class="services__header">
@@ -312,7 +315,8 @@
                         <!-- Cotent image -->
                         <div class="service__grid-image">
                             <figure class="service__image">
-                                <img class="services__img" src="./assets/img/service-img.png" alt="Our Services">
+                                <img class="services__img" src="./assets/img/service-img.png" alt="Our Services"
+                                    data-aos="fade-up" data-aos-anchor-placement="center-bottom">
                             </figure>
                             <a href="#!" class="services__btn btn">View All Services</a>
                         </div>
@@ -367,7 +371,7 @@
         </section>
 
         <!-- Team -->
-        <section class="team">
+        <section class="team" id="contact">
             <div class="container">
                 <div class="team__header">
                     <span class="span-header">
@@ -743,7 +747,7 @@
         </section>
 
         <!-- Review -->
-        <section class="review">
+        <section class="review" id="review">
             <div class="container">
                 <div class="review__wapper">
                     <button class="review__btn pre">
@@ -1034,6 +1038,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
