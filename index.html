@@ -881,8 +881,8 @@
                     </a>
                     <form method="POST" class="footer__form"
                         action="https://api-gateway.fullstack.edu.vn/action_page.php" autocomplete="off">
-                        <input class="footer__input" type="email" name="email" id="email" required pattern="
-                            [^@\s]+@[^@\s]+\.[^@\s]+" placeholder=" Enter your email">
+                        <input class="footer__input" type="email" name="email" id="email" required
+                            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder=" Enter your email">
                         <button type="submit" class="footer__submit">
                             <i class="fa-solid fa-arrow-right"></i>
                         </button>
@@ -1027,7 +1027,8 @@
                         </div>
                     </div>
                     <p class="footer__copyright">
-                        Copyright & Made by Nguyenthanhthien.com
+                        Copyright & Made by <a href="https://nguyenthanhthien.com" target="_blank"
+                            data-text="Nguyenthanhthien.com" rel="nofollow">Nguyenthanhthien.com</a>
                     </p>
                 </div>
             </div>
