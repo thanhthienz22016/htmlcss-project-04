@@ -785,7 +785,7 @@ button {
     bottom: 80px;
     width: 266px;
     height: 109px;
-    background-image: url(/assets/icons/vector-01.svg);
+    background-image: url(./assets/icons/vector-01.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -799,7 +799,7 @@ button {
     top: 19px;
     width: 266px;
     height: 109px;
-    background-image: url(/assets/icons/vector-02.svg);
+    background-image: url(./assets/icons/vector-02.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -812,7 +812,7 @@ button {
     bottom: 80px;
     width: 266px;
     height: 109px;
-    background-image: url(/assets/icons/vector-03.svg);
+    background-image: url(./assets/icons/vector-03.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -825,7 +825,7 @@ button {
     bottom: 80px;
     width: 266px;
     height: 109px;
-    background-image: url(/assets/icons/vector-04.svg);
+    background-image: url(./assets/icons/vector-04.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
