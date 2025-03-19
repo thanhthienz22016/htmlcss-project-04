@@ -4,9 +4,9 @@
 
 :root {
     --primary-color: #000958;
-    --primary-color-2: #FF5B2E;
-    --primary-bg: #FFFAF5;
-    --primary-bg-2: #FFF6ED;
+    --primary-color-2: #ff5b2e;
+    --primary-bg: #fffaf5;
+    --primary-bg-2: #fff6ed;
 
     /* ellip overflow */
     --line-clamp-lines: 2;
@@ -18,15 +18,15 @@ html {
     font-size: 62.5%;
 }
 
+body {
+    /* font-family: 'Sora', sans-serif; */
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+}
+
 html,
 body {
     scroll-behavior: smooth;
-}
-
-body {
-    /* font-family: 'Sora', sans-serif; */
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.6rem;
 }
 
 /* Common */
@@ -79,7 +79,7 @@ a {
 }
 
 .span-header {
-    color: #5E6085;
+    color: #5e6085;
     font-family: Sora, sans-serif;
     font-size: 1.6rem;
     font-weight: 600;
@@ -88,7 +88,7 @@ a {
 /* Form */
 input,
 button {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: inherit;
 }
 
@@ -112,7 +112,6 @@ button {
     height: 50px;
 }
 
-
 .logo__img {
     width: 103px;
     height: 37px;
@@ -120,11 +119,10 @@ button {
 
 .header__list {
     display: flex;
-
 }
 
 .header__item {
-    color: #5E6085;
+    color: #5e6085;
     font-size: 1.4rem;
     font-weight: 500;
     padding: 8px 18px;
@@ -170,7 +168,7 @@ button {
 }
 
 .header__btn:hover {
-    color: #FFF;
+    color: #fff;
     background: var(--primary-color-2);
     border-color: var(--primary-color-2);
 }
@@ -241,7 +239,7 @@ button {
     left: 92%;
     width: 186px;
     height: 244px;
-    border-color: #FAA7AD;
+    border-color: #faa7ad;
 }
 
 .hero__img:nth-child(3) {
@@ -281,8 +279,8 @@ button {
     width: 189px;
     height: 60px;
     border-radius: 31px;
-    background: #FF5B2E;
-    color: #FFF;
+    background: #ff5b2e;
+    color: #fff;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 600;
@@ -373,12 +371,12 @@ button {
     justify-content: center;
     width: 24px;
     height: 24px;
-    background: #FF5D31;
+    background: #ff5d31;
     border-radius: 4px;
 }
 
 .about__item span {
-    color: #48496A;
+    color: #48496a;
     font-size: 1.8rem;
     font-weight: 500;
     white-space: nowrap;
@@ -392,7 +390,6 @@ button {
     width: 544.63px;
     height: 559px;
     object-fit: cover;
-
 }
 
 .year-experience {
@@ -407,7 +404,7 @@ button {
     height: 156px; */
     padding: 31px 26px 29px 26px;
     border-radius: 10px;
-    background: #5BD6E2;
+    background: #5bd6e2;
     box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
     animation: translateY 3s ease infinite;
 }
@@ -427,7 +424,7 @@ button {
 }
 
 .year-experience__heading {
-    color: #FFF;
+    color: #fff;
     font-family: Sora, sans-serif;
     font-size: 4.2rem;
     font-weight: 700;
@@ -438,7 +435,7 @@ button {
     margin-top: 14px;
     text-align: center;
     width: 83px;
-    color: #C6F4F9;
+    color: #c6f4f9;
     font-size: 1.4rem;
     font-weight: 400;
     line-height: 1.42;
@@ -494,7 +491,7 @@ button {
     width: 100%;
     max-width: 557px;
     height: 2px;
-    background: #FF5B2E;
+    background: #ff5b2e;
     border-radius: 50px;
     opacity: 0.07;
 }
@@ -508,7 +505,7 @@ button {
     display: flex;
     align-items: center;
     height: 35px;
-    color: #48496A;
+    color: #48496a;
     font-family: Sora, sans-serif;
     font-size: 1.8rem;
     font-weight: 600;
@@ -554,7 +551,7 @@ button {
 .vacation__cta {
     display: inline-block;
     position: relative;
-    color: #FF5D31;
+    color: #ff5d31;
     font-size: 1.6rem;
     font-weight: 500;
     margin-top: 32px;
@@ -569,7 +566,7 @@ button {
     bottom: 0;
     width: 0;
     height: 1.5px;
-    background: #FF5D31;
+    background: #ff5d31;
     transition: all 0.5s ease-in-out;
 }
 
@@ -592,7 +589,7 @@ button {
     left: 0;
     width: 64%;
     height: 2px;
-    background: #FF5B2E;
+    background: #ff5b2e;
     border-radius: 50px;
 }
 
@@ -627,7 +624,7 @@ button {
     padding: 30px 28px 22px 28px;
     border-radius: 10px;
     border: 2px solid rgba(255, 188, 122, 0.26);
-    background: #FFF;
+    background: #fff;
 }
 
 .services__box+.services__box {
@@ -646,7 +643,7 @@ button {
     left: 0;
     width: 2px;
     height: 22px;
-    background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+    background: linear-gradient(90deg, #ff5b2e 0.39%, #ffa187 100.29%);
 }
 
 .services__desc {
@@ -660,7 +657,7 @@ button {
     align-items: center;
     column-gap: 6px;
     margin-top: 24px;
-    color: #34396A;
+    color: #34396a;
     font-family: Sora, sans-serif;
     font-size: 1.2rem;
     transition: color 0.3s ease;
@@ -692,7 +689,7 @@ button {
     bottom: 0;
     width: 410px;
     height: 250px;
-    background: #90E6F1;
+    background: #90e6f1;
     transform: translateX(-50%);
     border-radius: 10px;
     z-index: 1;
@@ -738,7 +735,8 @@ button {
     height: 100%;
     background: var(--primary-color-2);
     z-index: -1;
-    transition: width 0.6s ease-in-out, left 0.6s ease-in-out, right 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out, left 0.6s ease-in-out,
+        right 0.6s ease-in-out;
     border-color: var(--primary-color-2);
     /* border-radius: 31px; */
 }
@@ -766,7 +764,6 @@ button {
     display: flex;
     justify-content: space-between;
     margin-top: 59px;
-
 }
 
 .team__item {
@@ -785,11 +782,10 @@ button {
     bottom: 80px;
     width: 266px;
     height: 109px;
-    background-image: url(./assets/icons/vector-01.svg);
+    background-image: url(../icons/vector-01.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 
 .team__item:nth-child(2):after {
     content: "";
@@ -799,7 +795,7 @@ button {
     top: 19px;
     width: 266px;
     height: 109px;
-    background-image: url(./assets/icons/vector-02.svg);
+    background-image: url(../icons/vector-02.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -812,7 +808,7 @@ button {
     bottom: 80px;
     width: 266px;
     height: 109px;
-    background-image: url(./assets/icons/vector-03.svg);
+    background-image: url(../icons/vector-03.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -825,7 +821,7 @@ button {
     bottom: 80px;
     width: 266px;
     height: 109px;
-    background-image: url(./assets/icons/vector-04.svg);
+    background-image: url(../icons/vector-04.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -841,7 +837,6 @@ button {
     border-radius: 129.5px;
 }
 
-
 .team__img-bg {
     position: absolute;
     bottom: 0;
@@ -850,20 +845,20 @@ button {
     width: 234px;
     height: 299px;
     border-radius: 129.5px;
-    background: #90CCFF;
+    background: #90ccff;
     transition: background 0.6s ease;
 }
 
 .team__item:nth-child(2) .team__img-bg {
-    background: #FB8C62;
+    background: #fb8c62;
 }
 
 .team__item:nth-child(3) .team__img-bg {
-    background: #FCB542;
+    background: #fcb542;
 }
 
 .team__item:nth-child(4) .team__img-bg {
-    background: #36C3D9;
+    background: #36c3d9;
 }
 
 .team__item:nth-child(1):hover .team__img-bg {
@@ -895,7 +890,6 @@ button {
 .team__item:nth-child(2) .team__avatar {
     height: 357px;
     transform: translateX(-48%);
-
 }
 
 .team__item:nth-child(4) .team__avatar {
@@ -949,9 +943,9 @@ button {
     height: 100%;
     background: var(--primary-color-2);
     z-index: -1;
-    transition: width 0.6s ease-in-out, left 0.6s ease-in-out, right 0.6s ease-in-out;
+    transition: width 0.6s ease-in-out, left 0.6s ease-in-out,
+        right 0.6s ease-in-out;
     border-color: var(--primary-color-2);
-
 }
 
 .team__cta:hover::after {
@@ -1045,13 +1039,13 @@ button {
 .price__inner-child:nth-child(1) {
     display: none;
     opacity: 0;
-    transition: all .6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .price__inner-child:nth-child(2) {
     display: none;
     opacity: 0;
-    transition: all .6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .price__toggle-price input:nth-of-type(1):checked~.price__inner .price__inner-child:nth-child(1),
@@ -1065,7 +1059,7 @@ button {
     height: 100%;
     padding: 30px 28px 43px 28px;
     border-radius: 20px;
-    background: #FFF;
+    background: #fff;
 }
 
 .price__text-span {
@@ -1076,7 +1070,7 @@ button {
 
 .price__heading-2 {
     margin-top: 8px;
-    color: #3F4065;
+    color: #3f4065;
     font-size: 1.8rem;
 }
 
@@ -1099,7 +1093,7 @@ button {
     text-align: center;
     border-radius: 39px;
     background: #fff;
-    border: 1px solid rgba(255, 91, 46, 0.60);
+    border: 1px solid rgba(255, 91, 46, 0.6);
     transition: all 0.3s ease;
 }
 
@@ -1121,7 +1115,6 @@ button {
     border-color: var(--primary-color-2);
 }
 
-
 .price__list {
     margin-top: 24px;
 }
@@ -1134,7 +1127,7 @@ button {
 }
 
 .price__item i {
-    color: #FFBDAB;
+    color: #ffbdab;
     width: 14px;
     height: 14px;
 }
@@ -1174,7 +1167,7 @@ button {
     left: 0;
     width: 274px;
     height: 350px;
-    background: #FFDA54;
+    background: #ffda54;
     border-radius: 137px;
 }
 
@@ -1225,7 +1218,7 @@ button {
 
 .review__btn {
     outline: none;
-    border: 1px solid #FFD1C4;
+    border: 1px solid #ffd1c4;
     width: 54px;
     height: 54px;
     color: var(--primary-color-2);
@@ -1233,7 +1226,7 @@ button {
     border-radius: 50%;
     cursor: pointer;
     transition: background, border;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
 }
 
 .review__btn:hover {
@@ -1270,7 +1263,7 @@ button {
 }
 
 .review__btn.next i {
-    rotate: 180deg
+    rotate: 180deg;
 }
 
 .review__dot-list {
@@ -1358,13 +1351,13 @@ button {
     width: 358px;
     height: 362px;
     padding: 24px 0 0 36px;
-    background: #5BD6E2;
+    background: #5bd6e2;
     border-radius: 24px;
     overflow: hidden;
 }
 
 .blog__date {
-    color: #FFF;
+    color: #fff;
     font-family: Sora, sans-serif;
     font-size: 1.4rem;
 }
@@ -1384,7 +1377,6 @@ button {
 
 .blog__heading-2 {
     line-height: 1.54;
-
 }
 
 .blog__desc-2 {
@@ -1394,13 +1386,12 @@ button {
 }
 
 .blog__box:nth-child(2) .blog__img-container {
-    background: #90CCFF;
+    background: #90ccff;
 }
 
 .blog__box:nth-child(3) .blog__img-container {
-    background: #FF997E;
+    background: #ff997e;
 }
-
 
 /* Footer */
 .footer {
@@ -1428,7 +1419,6 @@ button {
     z-index: 1;
 }
 
-
 .footer__left {
     width: 23%;
 }
@@ -1446,7 +1436,7 @@ button {
     padding: 16px 50px 16px 22px;
     border-radius: 23px;
     border: 1px solid rgba(255, 91, 46, 0.25);
-    background: #FFF;
+    background: #fff;
 }
 
 .footer__input::placeholder,
@@ -1502,7 +1492,7 @@ button {
     justify-content: center;
     width: 32px;
     height: 32px;
-    color: #4D538D;
+    color: #4d538d;
     background: #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -1512,7 +1502,7 @@ button {
 
 .footer__social-btn:hover {
     color: #fff;
-    background: #4D538D;
+    background: #4d538d;
 }
 
 .footer__social-btn i {
@@ -1569,7 +1559,6 @@ button {
     text-shadow: 1px 0 0 var(--primary-color);
 }
 
-
 .footer__copyright {
     margin-top: 52px;
     color: #656689;
@@ -1595,7 +1584,7 @@ button {
     color: #18df10;
     white-space: nowrap;
     overflow: hidden;
-    transition: all .6s ease-in-out;
+    transition: all 0.6s ease-in-out;
 }
 
 .footer a:hover::before {
